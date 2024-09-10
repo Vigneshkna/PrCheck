@@ -1,16 +1,23 @@
 {
-    "name": "PnpmTest",
+    "name": "prcheck",
     "version": "1.0.0",
     "dependencies": {
-      "chalk": "^1.1.3",
-      "minimist":"~0.0.8",
-      "debug":"~2.2.0",
-      "commander":"~2.20.0",
-      "yargs-parser":"~5.0.0",
-      "hoek":"~2.16.3",
-      "tough-cookie":"~2.3.4",
-      "kind-of":"~3.2.2",
-      "es6-promise":"~3.0.2",
-      "lodash":"~3.10.1"
-    }
-  }
+        "chalk": "^1.1.3",
+        "minimist": "~0.0.8",
+        "debug": "~2.2.0",
+        "commander": "~2.20.0",
+        "yargs-parser": "~5.0.0",
+        "hoek": "~2.16.3",
+        "tough-cookie": "~2.3.4",
+        "kind-of": "~3.2.2",
+        "es6-promise": "~3.0.2",
+        "lodash": "~3.10.1"
+    },
+    "description": "test repo for sca",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC"
+}
