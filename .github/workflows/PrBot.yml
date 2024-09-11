@@ -46,6 +46,6 @@ jobs:
     runs-on: ubuntu-latest
     needs: [Snyk_scanning, TruffleHog_scanning]
     steps:
-      - uses: Vigneshkna/pr-scan-action@v1
+      - uses: Vigneshkna/pr-scan-action@dev-pr-init
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
