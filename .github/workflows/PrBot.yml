@@ -53,13 +53,8 @@ jobs:
         continue-on-error: false
         run: |
           curl -q "https://storage.googleapis.com/thog-releases/trufflehog-scanner/latest/fetch.sh" | bash
-          ./trufflehog git ${{ github.event.repository.default_branch }} $GITHUB_HEAD_REF --json > trufflehog_output.json
-          echo "trufflehog_json=$(cat trufflehog_output.json)" >> $GITHUB_OUTPUT
-        if: always()
-      - name: Output JSON result (for debugging)
-        run: |
-          echo "TruffleHog JSON Output:"
-          echo "${{ steps.trufflehog_bot_scan.outputs.trufflehog_json }}"
+          ./trufflehog git ${{ github.event.repository.default_branch }} $GITHUB_HEAD_REF 
+          
 
   BotCheck:
     permissions: write-all
