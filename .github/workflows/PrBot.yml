@@ -40,7 +40,7 @@ jobs:
         continue-on-error: true
         uses: trufflesecurity/TruffleHog-Enterprise-Github-Action@main
         with:
-            args: ${{ github.event.repository.default_branch }} HEAD --json
+            args: ${{ github.event.repository.default_branch }} $GITHUB_HEAD_REF --json
   BotCheck:
     permissions: write-all
     runs-on: ubuntu-latest
