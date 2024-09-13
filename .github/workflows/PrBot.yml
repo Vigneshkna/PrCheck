@@ -7,27 +7,6 @@ permissions:
   pull-requests: write
 
 jobs:
-  # Snyk_scanning:
-  #   name: Snyk Bot scan
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - name: Checkout
-  #       uses: actions/checkout@v3
-  #     - name: Snyk Bot scan
-  #       continue-on-error: true
-  #       run: |
-  #        rm -rf node_modules
-  #        rm -f package-lock.json
-  #        echo "----------NPM install------------"
-  #        npm install
-  #        echo "----------Download Latest Snyk CLI-----------"
-  #           curl -Lo ./snyk "https://github.com/snyk/snyk/releases/download/v1.1293.0/snyk-linux"
-  #           chmod +x snyk
-  #           ls -lrt
-  #           echo "----------Authenticating Snyk-----------"
-  #           ./snyk auth ${{ secrets.SNYK_TOKEN }}
-  #           echo "----------Snyk Scanning-----------"
-  #           ./snyk test --all-projects -d
   Snyk_scanning:
     name: Snyk Bot scan
     runs-on: ubuntu-latest
@@ -49,22 +28,17 @@ jobs:
             ./snyk auth ${{ secrets.SNYK_TOKEN }}
             echo "----------Snyk Scanning-----------"
             ./snyk test --all-projects -d --json > snyk_output.json
-      - name: Parse Snyk JSON output for issues
+      - name: Set filtered Snyk JSON as output
+        id: set-snyk-output
         run: |
-          jq '.vulnerabilities[] | {
-            Severity: .severity,
-            Attacks: .identifiers.CWE,
-            "Vulnerable package": .package,
-            "Upgrade to": .upgradePath,
-            Reference: .identifiers.CWE
-          }' snyk_output.json > snyk_parsed_output.json
-      - name: Upload parsed output
-        uses: actions/upload-artifact@v3
-        with:
-          name: snyk-parsed-output
-          path: snyk_parsed_output.json
-      - name: Print parsed vulnerabilities
-        run: cat snyk_parsed_output.json
+          # Escape the JSON and set it as output
+          filtered_output=$(cat snyk_output.json | jq -Rr @json)
+          echo "::set-output name=filtered_json::$filtered_output"
+          
+      - name: Use the filtered JSON output
+        run: |
+          echo "The filtered Snyk output is: ${{ steps.set-snyk-output.outputs.filtered_json }}"
+  
   # TruffleHog_scanning:
   #   name: TruffleHog Bot scan
   #   runs-on: ubuntu-latest
