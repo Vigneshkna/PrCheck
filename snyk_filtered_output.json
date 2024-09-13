@@ -1,0 +1,248 @@
+[
+  {
+    "Severity": "high",
+    "Attacks": [
+      "CWE-400"
+    ],
+    "Vulnerable package": "ansi-regex",
+    "Upgrade to": [
+      "3.0.1",
+      "4.1.1",
+      "5.0.1",
+      "6.0.1"
+    ],
+    "Reference": [
+      "https://github.com/chalk/ansi-regex/commit/419250fa510bf31b4cc672e76537a64f9332e1f1",
+      "https://github.com/chalk/ansi-regex/commit/75a657da7af875b2e2724fd6331bf0a4b23d3c9a",
+      "https://github.com/chalk/ansi-regex/commit/8d1d7cdb586269882c4bdc1b7325d0c58c8f76f9",
+      "https://github.com/chalk/ansi-regex/pull/37"
+    ]
+  },
+  {
+    "Severity": "high",
+    "Attacks": [
+      "CWE-400"
+    ],
+    "Vulnerable package": "ansi-regex",
+    "Upgrade to": [
+      "3.0.1",
+      "4.1.1",
+      "5.0.1",
+      "6.0.1"
+    ],
+    "Reference": [
+      "https://github.com/chalk/ansi-regex/commit/419250fa510bf31b4cc672e76537a64f9332e1f1",
+      "https://github.com/chalk/ansi-regex/commit/75a657da7af875b2e2724fd6331bf0a4b23d3c9a",
+      "https://github.com/chalk/ansi-regex/commit/8d1d7cdb586269882c4bdc1b7325d0c58c8f76f9",
+      "https://github.com/chalk/ansi-regex/pull/37"
+    ]
+  },
+  {
+    "Severity": "medium",
+    "Attacks": [
+      "CWE-400"
+    ],
+    "Vulnerable package": "lodash",
+    "Upgrade to": [
+      "4.17.21"
+    ],
+    "Reference": [
+      "https://github.com/lodash/lodash/commit/c4847ebe7d14540bb28a8b932a9ce1b9ecbfee1a",
+      "https://github.com/lodash/lodash/pull/5065"
+    ]
+  },
+  {
+    "Severity": "high",
+    "Attacks": [
+      "CWE-94"
+    ],
+    "Vulnerable package": "lodash",
+    "Upgrade to": [
+      "4.17.21"
+    ],
+    "Reference": [
+      "https://github.com/lodash/lodash/commit/3469357cff396a26c363f8c1b5a91dde28ba4b1c",
+      "https://github.com/lodash/lodash/blob/ddfd9b11a0126db2302cb70ec9973b66baec0975/lodash.js%23L14851"
+    ]
+  },
+  {
+    "Severity": "high",
+    "Attacks": [
+      "CWE-1321"
+    ],
+    "Vulnerable package": "lodash",
+    "Upgrade to": [
+      "4.17.12"
+    ],
+    "Reference": [
+      "https://github.com/lodash/lodash/issues/4348",
+      "https://github.com/lodash/lodash/pull/4336",
+      "https://github.com/lodash/lodash/pull/4355",
+      "https://github.com/sailshq/lodash/pull/1",
+      "https://www.npmjs.com/advisories/1065",
+      "https://snyk.io/blog/snyk-research-team-discovers-severe-prototype-pollution-security-vulnerabilities-affecting-all-versions-of-lodash/"
+    ]
+  },
+  {
+    "Severity": "high",
+    "Attacks": [
+      "CWE-1321"
+    ],
+    "Vulnerable package": "lodash",
+    "Upgrade to": [
+      "4.17.17"
+    ],
+    "Reference": [
+      "https://hackerone.com/reports/864701"
+    ]
+  },
+  {
+    "Severity": "high",
+    "Attacks": [
+      "CWE-1321"
+    ],
+    "Vulnerable package": "lodash",
+    "Upgrade to": [
+      "4.17.17"
+    ],
+    "Reference": [
+      "https://gist.github.com/Sampaguitas/a316bced4fdd501146b07997d1d04eb2",
+      "https://github.com/lodash/lodash/blob/aaa111912cb05e6f0f9f23d1eb8a41ccfcf9c2c2/lodash.zipobjectdeep/index.js%23L738"
+    ]
+  },
+  {
+    "Severity": "high",
+    "Attacks": [
+      "CWE-1321"
+    ],
+    "Vulnerable package": "lodash",
+    "Upgrade to": [
+      "4.17.11"
+    ],
+    "Reference": [
+      "https://github.com/lodash/lodash/commit/90e6199a161b6445b01454517b40ef65ebecd2ad",
+      "https://github.com/lodash/lodash/pull/4337",
+      "https://www.npmjs.com/advisories/1066",
+      "https://www.npmjs.com/advisories/1068",
+      "https://www.npmjs.com/advisories/1071",
+      "https://www.npmjs.com/advisories/782",
+      "https://hackerone.com/reports/380873"
+    ]
+  },
+  {
+    "Severity": "medium",
+    "Attacks": [
+      "CWE-185"
+    ],
+    "Vulnerable package": "lodash",
+    "Upgrade to": [
+      "4.17.11"
+    ],
+    "Reference": [
+      "https://github.com/lodash/lodash/commit/5c08f18d365b64063bfbfa686cbb97cdd6267347",
+      "https://github.com/lodash/lodash/pull/4450",
+      "https://github.com/lodash/lodash/issues/3359"
+    ]
+  },
+  {
+    "Severity": "medium",
+    "Attacks": [
+      "CWE-1321"
+    ],
+    "Vulnerable package": "lodash",
+    "Upgrade to": [
+      "4.17.5"
+    ],
+    "Reference": [
+      "https://github.com/lodash/lodash/commit/d8e069cc3410082e44eb18fcf8e7f3d08ebe1d4a",
+      "https://github.com/lodash/lodash/pull/4337",
+      "https://hackerone.com/reports/310443",
+      "https://www.npmjs.com/advisories/1067",
+      "https://www.npmjs.com/advisories/1069",
+      "https://www.npmjs.com/advisories/1070"
+    ]
+  },
+  {
+    "Severity": "low",
+    "Attacks": [
+      "CWE-1321"
+    ],
+    "Vulnerable package": "minimist",
+    "Upgrade to": [
+      "0.2.4",
+      "1.2.6"
+    ],
+    "Reference": [
+      "https://github.com/minimistjs/minimist/commit/34e20b8461118608703d6485326abbb8e35e1703",
+      "https://github.com/minimistjs/minimist/commit/c2b981977fa834b223b408cfb860f933c9811e4d",
+      "https://github.com/minimistjs/minimist/blob/master/index.js%23L69"
+    ]
+  },
+  {
+    "Severity": "medium",
+    "Attacks": [
+      "CWE-1321"
+    ],
+    "Vulnerable package": "minimist",
+    "Upgrade to": [
+      "0.2.1",
+      "1.2.3"
+    ],
+    "Reference": [
+      "https://gist.github.com/Kirill89/47feb345b09bf081317f08dd43403a8a",
+      "https://github.com/substack/minimist/commit/63e7ed05aa4b1889ec2f3b196426db4500cbda94",
+      "https://github.com/substack/minimist/commit/38a4d1caead72ef99e824bb420a2528eec03d9ab",
+      "https://snyk.io/blog/prototype-pollution-minimist/"
+    ]
+  },
+  {
+    "Severity": "medium",
+    "Attacks": [
+      "CWE-1321"
+    ],
+    "Vulnerable package": "tough-cookie",
+    "Upgrade to": [
+      "4.1.3"
+    ],
+    "Reference": [
+      "https://github.com/salesforce/tough-cookie/commit/12d474791bb856004e858fdb1c47b7608d09cf6e",
+      "https://github.com/salesforce/tough-cookie/issues/282",
+      "https://github.com/salesforce/tough-cookie/releases/tag/v4.1.3"
+    ]
+  },
+  {
+    "Severity": "low",
+    "Attacks": [
+      "CWE-400"
+    ],
+    "Vulnerable package": "debug",
+    "Upgrade to": [
+      "2.6.9",
+      "3.1.0",
+      "3.2.7",
+      "4.3.1"
+    ],
+    "Reference": [
+      "https://github.com/debug-js/debug/commit/b6d12fdbc63b483e5c969da33ea6adc09946b5ac",
+      "https://github.com/visionmedia/debug/pull/504/commits/42a6ae0737f9243c80b6d3dbb08a69a7ae2a1061",
+      "https://github.com/visionmedia/debug/issues/501",
+      "https://github.com/visionmedia/debug/pull/504",
+      "https://github.com/debug-js/debug/releases/tag/2.6.9",
+      "https://github.com/debug-js/debug/releases/tag/3.1.0"
+    ]
+  },
+  {
+    "Severity": "low",
+    "Attacks": [
+      "CWE-400"
+    ],
+    "Vulnerable package": "ms",
+    "Upgrade to": [
+      "2.0.0"
+    ],
+    "Reference": [
+      "https://github.com/zeit/ms/pull/89/commits/305f2ddcd4eff7cc7c518aca6bb2b2d2daad8fef",
+      "https://github.com/zeit/ms/pull/89"
+    ]
+  }
+]
